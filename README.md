@@ -3,7 +3,7 @@
 
 </p>
 
-<h1>DNS Records Lab in Azure</h1>
+<h1 align="center">DNS Records Lab in Azure</h1>
 <p>This tutorial covers A-records, DNS caching, and CNAME records, reinforcing key DNS management concepts in an Azure-based lab environment. <br />
 </p>
 
