@@ -31,17 +31,17 @@
 <h2>Actions and Observations</h2>
 
 <h4></h4>
-<p>Ensure Domain Controller-1 and Device-1 are running in the Azure Portal.
+<p>Ensure Domain-Controller and Device-1 are running in the Azure Portal.
 </p>
 <p>
 <ul>
-<li>Log into DC-1 and Device-1 using admin credentials.</li>
+<li>Log into Domain-Controller and Device-1 using admin credentials.</li>
 <li>Attempt to ping “powerpuff” from Device-1 (it will fail).</li>
   <p>
 <img src="https://github.com/user-attachments/assets/fd1a16f3-4423-4bda-b716-ea01394fd132"/>
 </p>
-  In Domain Controller-1:
-<li> Create a DNS A-record for "powerpuff" on DC-1, pointing to DC-1’s private IP.</li>
+  In Domain-Controller:
+<li> Create a DNS A-record for "powerpuff" on Domain-Controller, pointing to Domain-Controller’s private IP.</li>
 
   <br/>
 
@@ -98,7 +98,7 @@
 <p></p>
 <p>
 <ul>
-<li>Create a CNAME record on DC-1, pointing "search" to "www.google.com".</li>
+<li>Create a CNAME record on Domain-Controller, pointing "search" to "www.google.com".</li>
  <br/>
   
   ![image](https://github.com/user-attachments/assets/567e56cf-17a0-4653-9d63-5e8aa1846149)
