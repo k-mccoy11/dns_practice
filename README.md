@@ -36,18 +36,45 @@
 <p>
 <ul>
 <li>Log into DC-1 and Device-1 using admin credentials.</li>
-<li>Attempt to ping “mainframe” from Device-1 (it will fail).</li>
+<li>Attempt to ping “powerpuff” from Device-1 (it will fail).</li>
   <p>
-<img src=""/>
+<img src="https://github.com/user-attachments/assets/fd1a16f3-4423-4bda-b716-ea01394fd132"/>
 </p>
-<li>Create a DNS A-record for "mainframe" on DC-1, pointing to DC-1’s private IP.</li>
-  <p>
-<img src=""/>
-</p>
-<li>Retry pinging “mainframe” from Device-1 (it should now succeed).</li>
-  <p>
-<img src=""/>
-</p>
+  In Domain Controller-1:
+<li> Create a DNS A-record for "powerpuff" on DC-1, pointing to DC-1’s private IP.</li>
+
+  <br/>
+
+  ![image](https://github.com/user-attachments/assets/a745f72d-534e-431e-a5d6-4979a0c47f14)
+
+<br/>
+
+![image](https://github.com/user-attachments/assets/462ed7c2-7261-4295-af2e-af2b3180020a)
+
+<br/>
+
+![image](https://github.com/user-attachments/assets/517d40c2-d546-43ca-a3d7-f0964e2246d9)
+
+<br/>
+
+![image](https://github.com/user-attachments/assets/f2614b9d-3317-4460-ade1-0bed729e9e3f)
+
+<br/>
+
+![image](https://github.com/user-attachments/assets/2586546f-7ee7-43c0-b118-3b7ec95357db)
+
+<br/>
+
+![image](https://github.com/user-attachments/assets/911d57f9-3399-452c-a0c0-63704946dd2c)
+
+<br/>
+
+<li>Retry pinging “powerpuff” from Device-1 (it should now succeed).</li>
+
+<br/>
+
+![image](https://github.com/user-attachments/assets/c864cfbe-f1a9-4458-a246-117ad6fbddb7)
+<br/>
 </ul>
 </p>
 <br/>
@@ -56,28 +83,15 @@
 <p></p>
 <p>
 <ul>
-<li>Modify mainframe’s DNS record on DC-1 to 8.8.8.8.</li>
-  <p>
-<img src=""/>
-</p>
-<li>Ping "mainframe" from Client-1 and observe that it still resolves the old address.</li>
-  <p>
-<img src=""/>
-</p>
-<li>Display the local DNS cache (ipconfig /displaydns).</li>
-  <p>
-<img src=""/>
-</p>
-  <li>Flush the DNS cache (ipconfig /flushdns) and verify that it clears.</li>
-  <p>
-<img src=""/>
-</p>
-  <li>Ping "mainframe" again to confirm it resolves to the updated address.</li>
-  <p>
-<img src=""/>
-</p>
-</ul>
-</p>
+<li>Modify powerpuff’s DNS record on DC-1 to 8.8.8.8.</li>
+
+  ![image](https://github.com/user-attachments/assets/911d57f9-3399-452c-a0c0-63704946dd2c)
+  <br/>
+<li> Display the local DNS cache (ipconfig /displaydns).</li>
+ 
+ ![image](https://github.com/user-attachments/assets/78213e7b-6dd0-4e46-a3d2-07dac22c2137)
+
+ <h6> If needed, flush the DNS cache (ipconfig /flushdns).</h6>
 <br/>
 
 <h4>CNAME Record </h4>
@@ -85,19 +99,24 @@
 <p>
 <ul>
 <li>Create a CNAME record on DC-1, pointing "search" to "www.google.com".</li>
-  <p>
-<img src=""/>
-</p>
-<li>Ping "search" from Client-1 and observe the results.</li>
-  <p>
-<img src=""/>
-</p>
-<li>Use nslookup “search” to verify the CNAME resolution.</li>
-  <p>
-<img src=""/>
-</p>
+ <br/>
+  
+  ![image](https://github.com/user-attachments/assets/567e56cf-17a0-4653-9d63-5e8aa1846149)
+<br/>
+ ![image](https://github.com/user-attachments/assets/04da936f-71b4-40e6-82db-4131bbc23922)
+ <br/>
+<li>Ping "professor" from Device-1 and observe the results.</li>
+  <br/>
+
+  ![image](https://github.com/user-attachments/assets/d4e4d928-4436-49d2-9421-580c20972082)
+<br/>
+<li>Use nslookup “professor” to verify the CNAME resolution.</li>
+<br/> 
+
+![image](https://github.com/user-attachments/assets/27b52c78-4163-47c2-a41e-a92d84431821)
+
 </ul>
 </p>
 <br/>
 
-Complete: Stop VMs in Azure 
+Practice Completed: Stop VMs in Azure. Have a great day!
